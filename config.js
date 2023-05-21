@@ -14,7 +14,7 @@
 // • Rlxfly
 // • Rasel comel
 // • ImYanXiao
-// • Xtreshe (Beban)
+// • Xtreshe
 // • Aldi Ofc
 // • ZykoBotz MD (Kabul)
 // • Wh mods dev 
@@ -61,6 +61,8 @@ global.snh = 'https://nhentai.net/g/HaramTod🗿' //Hmmm, Ini boleh kalian isi t
 /*============== PAYMENT ==============*/
 global.pdana = '083863727401' //Nomor Danamu
 global.ppulsa = '083863728401' //Nomor SimCard Yang Kamu Pake
+global.pgopay = '083863727401'
+global.povo = '083863727401'
 global.psaweria = '-' //Link Saweriamu Kalo Nggada Ketik - aja
 
 /*============== NOMOR ==============*/
@@ -74,7 +76,7 @@ global.tautanwa = 'https://api.whatsapp.com/send?phone=+6283863727401' //kalau b
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6283863727401', '❦ ༄ᶜᴋputra☆࿐ 🎐', true] //Ganti jd nomormu sama Namamu
+  ['6283863727401', '❦ ༄ᶜputra☆࿐ 🎐', true] //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -84,7 +86,15 @@ global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user
 global.lolkey = '2da1fcd209f20ae428d8482f'
 global.xkey = 'b8040941f7'
 /*============== API ==============*/
-global.APIs = { // API Prefix
+global.keysZens = ['LuOlangNgentot', 'c2459db922', '37CC845916', '6fb0eff124', 'hdiiofficial', 'fiktod', 'BF39D349845E', '675e34de8a', '0b917b905e6f']
+global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
+global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
+global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
+global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
+global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
+
+global.APIs = { 
+// API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
   rey: 'https://server-api-rey.herokuapp.com',
@@ -120,19 +130,19 @@ global.APIKeys = { // APIKey Here
   'https://api.botcahx.biz.id': 'Admin',
   'https://api-fgmods.ddns.net': '6sotNhAL',
   'https://api.saipulanuar.my.id': '9vxw5GqJ',
-  'https://api.xteam.xyz': 'HIRO',
+  'https://api.xteam.xyz': `${keysxteam}`,
   'https://anabotofc.herokuapp.com/': 'AnaBot',
   'https://api.lolhuman.xyz': '2da1fcd209f20ae428d8482f',// 8e66d0934cf741bfd2182c16
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://melcanz.com': 'melcantik',
-  'https://api.neoxr.my.id': '5VC9rvNx',
+  'https://api.neoxr.my.id': `${keysneoxr}`,
   'https://server-api-rey.herokuapp.com': 'apirey',
   'https://botstyle-api.herokuapp.com': 'Apikeymu',
   'https://hardianto.xyz': 'hardianto',
   'https://violetics.pw': 'beta',
-  'https://api.zahwazein.xyz': 'LuOlangNgentot',
+  'https://api.zahwazein.xyz': `${keysxxx}`,
   'https://ziy.herokuapp.com' : 'xZiyy',
   'https://api.nataganz.com' : 'Pasha'
 
@@ -396,7 +406,7 @@ function Anime() {
  return Anime
 }
 /*============== TEXT ==============*/
-global.wait = pickRandom(["Sabar Sayang 98% 𝚠𝚊𝚒𝚝!!", "Sabar Om", "Bentar", "Wᴀɪᴛɪɴɢ", "「▰▰▰▱▱▱▱▱▱▱」ʟ ᴏ ᴀ ᴅ ɪ ɴ ɢ..."])
+global.wait = pickRandom(["Sabar Sayang 98% !!!", "Sabar Om", "Bentar", "Wᴀɪᴛɪɴɢ", "「▰▰▰▱▱▱▱▱▱▱」ʟ ᴏ ᴀ ᴅ ɪ ɴ ɢ..."])
 global.md = pickRandom(["_In progress, please wait..._", "Proses", "Tunggu Sebentar", "Tunggu Sabar Ya sayang 😭"])
 global.eror = '```404 error```'
 global.dtu = 'ɪɴꜱᴛᴀɢʀᴀᴍ'

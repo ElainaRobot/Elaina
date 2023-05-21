@@ -1417,37 +1417,19 @@ Untuk menghapus pesan yang dikirim BOT, reply pesan dengan perintah
 dfail
  */
 global.dfail = (type, m, conn) => {
-    let nmsr = `👋 Hai *@${m.sender.split("@")[0]}*, `
     let msg = {
-        rowner: `${nmsr}\n 
-Perintah ini hanya dapat digunakan oleh *OWNER* !\n\n${wm}`,
-        owner: `${nmsr}\n
-Perintah ini hanya dapat digunakan oleh *Owner Bot* !\n\n${wm}`,
-        mods: `${nmsr}\n 
-Perintah ini hanya dapat digunakan oleh *Moderator* !\n\n${wm}`,
-        premium: `${nmsr}\n
-Perintah ini hanya untuk member *Premium* !\n\n${wm}`,
-        group: `${nmsr}\n
-Perintah ini hanya dapat digunakan di grup !\n\n${wm}`,
-        private: `${nmsr}\n
-Perintah ini hanya dapat digunakan di Chat Pribadi !\n\n${wm}`,
-        admin: `${nmsr}\n
-Perintah ini hanya untuk *Admin* grup !\n\n${wm}`,
-        botAdmin: `${nmsr}\n
-Jadikan bot sebagai *Admin* untuk menggunakan perintah ini !\n\n${wm}`,
-        nsfw: `${nmsr}\n
-NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini !\n\n${wm}`,
-        rpg: `${nmsr}\n
-RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini !\n\n${wm}`,
-        restrict: `${nmsr}\n
-Fitur ini di *disable* !`
+        rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
+        owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
+        mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
+        premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+        group: 'Perintah ini hanya dapat digunakan di grup!',
+        private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
+        admin: 'Perintah ini hanya untuk *Admin* grup!',
+        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Mansur.16*',
+        restrict: 'Fitur ini di *disable*!'
     }[type]
-    if (msg) return conn.sendButton(m.chat, danied, msg, `${flaaa2 + '𝘼𝙘𝙘𝙨𝙚𝙨 𝘿𝙖𝙣𝙞𝙚𝙙'}`, [['Menu', '.menu'],['Owner', '.owner'],['Donasi', '.donasi']], m)
-    
-     let msgg = {
-    	unreg: `${nmsr}\nSilahkan daftar ke database terlebih dahulu untuk menggunakan bot ini lebih lanjut *Click button di bawah*\n\n*Kalian bisa ikuti langkah verify selanjutnya*\n\nLAKI-LAKI ATAU PEREMPUAN ?  \n\n${wm}`
-}[type]
-if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, `${flaaa2 + 'Verify'}`, [['LAKI-LAKI', '/verify'],['PEREMPUAN', '/verify'],['Creator', '.owner']], m)
+    if (msg) return m.reply(msg)
 }    
     
 let file = global.__filename(import.meta.url, true)
