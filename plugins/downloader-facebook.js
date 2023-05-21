@@ -1,6 +1,6 @@
 // Update by Xnuvers007
 
-/*import axios from 'axios'
+import axios from 'axios'
 var handler = async (m, { conn, command, text, usedPrefix }) => {
     if (!text) throw `Use example\n${usedPrefix}${command} https://www.facebook.com/100010929794713/posts/1885825845125057/`
     const req = await igeh(text)
@@ -69,24 +69,3 @@ async function igeh(url_media){
         }
     })
 }
-*/
-// update by PutraModz
-import fetch from 'node-fetch'
-import fs from 'fs'
-let handler = async(m, { conn, groupMetadata, usedPrefix, text, args, command }) => {
-let imgr = flaaa2
-if (!args[0]) throw `MASUKAN URL FB`
-let f = await fetch(`https://kyyrest.diki6969.repl.co/api/dowloader/fbdown?url=${args[0]}&apikey=e8e8bade`)
-m.reply(md)
-let x = await f.json()
-let cap = `DOWNLOADER FACEBOOK`
-await conn.sendButton(m.chat, `*Result*
-`, cap, `${imgr + 'FACEBOOK'}`, [
-                ['Get SD', `${usedPrefix}get ${x.result.Normal_video}`],
-                ['Get HD', `${usedPrefix}get ${x.result.HD}`],
-                ['Get Audio', `${usedPrefix}get ${x.result.audio}`]
-            ], fkontak)
-}
-handler.help = ['facebook'].map(v => v + ' <url>')
-handler.command = /^((facebook|fb)(downloder|dl)?)$/i
-export default handler

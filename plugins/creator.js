@@ -10,7 +10,7 @@ let name = await conn.getName(who)
   ], fkontak)
   /*const tag_own = await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: fkontak })*/
 let caption = `👋 Hai *@${who.split("@")[0]}*, Nih Owner Saya kak`
-    await conn.sendButton(m.chat, caption, author, null, [['👨Sapa Owner', 'bilek']], m, { quoted: fkontak, mentions: conn.parseMention(caption) })
+    await m.reply(`ʜᴇʟʟᴏ @${m.sender.split(`@`)[0]} ᴛʜᴀᴛs ᴍʏ ᴏᴡɴᴇʀ ᴅᴏɴᴛ sᴘᴀᴍ ᴏʀ ʏᴏᴜ ᴡɪʟʟ ʙᴇ ʙʟᴏᴄᴋᴇᴅ`)
   } 
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
