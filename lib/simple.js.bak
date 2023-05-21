@@ -11,7 +11,6 @@ import util from 'util'
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = (await import('./exif.js')).default
 import {fileTypeFromBuffer} from 'file-type';
 import { format } from 'util'
-import { resize } from './others.js'
 import { fileURLToPath } from 'url'
 import store from './store.js'
 let conv = await import('./sticker.js')
