@@ -16,6 +16,8 @@ let handler = async (m, { conn, text }) => {
 		m.reply(buffer)
 	})
 }
+handler.help = ['blur <reaply image>']
+handler.tags = ['tools']
 handler.command = /^(blur)$/i
 
 export default handler
